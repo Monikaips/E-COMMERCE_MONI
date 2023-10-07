@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fashion</title>
+    <link rel="shortcut icon" type="image" href="./image/logo2.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- bootstrap links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- bootstrap links -->
+    <!-- fonts links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <!-- fonts links -->
+</head>
+<body>
+
+    <!-- top navbar -->
+    <div class="top-navbar">
+        <div class="top-icons">
+            <a href="#" class="twiiter"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="twiiter"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="twiiter"><i class="fa-brands fa-telegram"></i></a>
+            <a href="#" class="twiiter"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+        <div class="other-links">
+            <button id="btn-login"><a href="login.html">Login</a></button>
+            <button id="btn-signup"><a href="signup.html">Sign up</a></button>
+
+            <i class="fa-solid fa-user"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+    </div>
+    <!-- top navbar -->
+
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg" id="navbar">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="./images/logo.png" alt="" width="180px"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span><i class="fa-solid fa-bars" style="color: white;"></i></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="clothe.html">Clothings</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Category
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #1c1c50;">
+                      <li><a class="dropdown-item" href="tshirts.html">T-SHIRTS</a></li>
+                      <li><a class="dropdown-item" href="shirts.html">SHIRTS</a></li>
+                      <li><a class="dropdown-item" href="hoodies.html">Hoodies</a></li>
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                  </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                  </li>
+                </ul>
+               
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit" id="search-btn">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+
+<!--cart--->
+<div id="cart-icon">
+    <i class="fa-solid fa-cart-shopping"></i>
+    <span id="cart-count">0</span>
+  </div>
+
+
+<!-- product cards -->
+<div class="container" id="product-cards">
+    <h1 class="text-center">SHIRTS</h1>
+    <div class="row" style="margin-top: 30px;">
+        <div class="col-md-3 py-3 py-md-0">
+            <div class="card">
+                <img src="./images/shirt1.jpg" alt="">
+                <div class="card-body">
+                    <h3>BLUE BLAST SHIRT</h3>
+                    <p>Shirt</p>
+                    <div class="star">
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                    </div>
+                     <h5>$312.3 <button class="btn btn-primary" onclick="addToCart('BLUE BLAST SHIRT', 312.3)">Add to Cart</button></h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-3 py-3 py-md-0">
+            <div class="card">
+                <img src="./images/shirt2.jpg" alt="">
+                <div class="card-body">
+                    <h3> Bright White Casual Shirt</h3>
+                    <p>Casual Shirt</p>
+                    <div class="star">
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                        <i class="fas fa-star checked"></i>
+                    </div>
+                    <h5>$327.3 <button class="btn btn-primary" onclick="addToCart('Bright White Casual Shirt', 327.3)">Add to Cart</button></h5>
+                </div>
+            </div>
+        </div>
+    <div class="col-md-3 py-3 py-md-0">
+        <div class="card">
+            <img src="./images/shirt3.jpg" alt="">
+            <div class="card-body">
+                <h3>Steel Gray Sophistication Shirt</h3>
+                <p>Shirt</p>
+                <div class="star">
+                    <i class="fas fa-star checked"></i>
+                    <i class="fas fa-star checked"></i>
+                    <i class="fas fa-star checked"></i>
+                    <i class="fas fa-star checked"></i>
+                    <i class="fas fa-star checked"></i>
+                </div>
+                <h5>220.10<button class="btn btn-primary" onclick="addToCart('Bright White Casual Shirt', 220.10)">Add to Cart</button></h5>
+                </div>
+        </div>
+    </div>
+    <div class="col-md-3 py-3 py-md-0">
+        <div class="card">
+            <img src="./images/shirt4.jpg" alt="">
+            <div class="card-body">
+                <h3>Mustard Magic Henley</h3>
+                <p>Blossom Bliss shirt</p>
+                <div class="star">
+                    <i class="fas fa-star checked"></i>
+                    <i class="fas fa-star checked"></i>
+                    <i class="fas fa-star checked"></i>
+                    <i class="fas fa-star checked"></i>
+                    <i class="fas fa-star checked"></i>
+                </div>
+                <h5>$6.50 <strike>$10.50</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></h5>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 py-3 py-md-0">
+        <div class="card">
+            <img src="./images/shirt5.jpg" alt="">
+            <div class="card-body">
+                <h3>Earthy Brown Shirt</h3>
+                <p>Plain Shirt</p>
+                <div class="star">
+                    <i class="fas fa-star checked"></i>
+                    <i class="fas fa-star checked"></i>
+                    <i class="fas fa-star checked"></i>
+                    <i class="fas fa-star checked"></i>
+                    <i class="fas fa-star checked"></i>
+                </div>
+                <h5>$12.3 <strike>$15.5</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></h5>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-3 py-3 py-md-0">
+        <div class="card">
+            <img src="./images/shirt6.jpg" alt="">
+            <div class="card-body">
+                <h3>Ocean Blue Bliss Shirt</h3>
+                <p>Plain Shirt</p>
+                <div class="star">
+                    <i class="fas fa-star checked"></i>
+                    <i class="fas fa-star checked"></i>
+                    <i class="fas fa-star checked"></i>
+                    <i class="fas fa-star checked"></i>
+                    <i class="fas fa-star checked"></i>
+                </div>
+                <h5>$10.5 <strike>$15</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></h5>
+            </div>
+        </div>
+    </div>
+<div class="col-md-3 py-3 py-md-0">
+    <div class="card">
+        <img src="./images/shirt7.jpg" alt="">
+        <div class="card-body">
+            <h3>Baby Blues Checkered Polo</h3>
+            <p>Checked Shirt</p>
+            <div class="star">
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+            </div>
+            <h5>$20.10 <strike>$30.20</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></h5>
+        </div>
+    </div>
+</div>
+<div class="col-md-3 py-3 py-md-0">
+    <div class="card">
+        <img src="./images/shirt8.jpeg" alt="">
+        <div class="card-body">
+            <h3>Daisy Delight Print Floral Shirt</h3>
+            <p>Floral Shirt</p>
+            <div class="star">
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+            </div>
+            <h5>$6.50 <strike>$10.50</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></h5>
+        </div>
+    </div>
+</div>
+<div class="col-md-3 py-3 py-md-0">
+    <div class="card">
+        <img src="./images/shirt9.jpeg" alt="">
+        <div class="card-body">
+            <h3>Gentleman's Blue Stripe Shirt</h3>
+            <p>Striped Shirt</p>
+            <div class="star">
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+            </div>
+            <h5>$10.5 <strike>$15</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></h5>
+        </div>
+    </div>
+</div>
+<div class="col-md-3 py-3 py-md-0">
+    <div class="card">
+        <img src="./images/shirt10.jpeg" alt="">
+        <div class="card-body">
+            <h3>Pink Pearl Silk Sensation</h3>
+            <p>Silk Shirt</p>
+            <div class="star">
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+            </div>
+            <h5>$20.10 <strike>$30.20</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></h5>
+        </div>
+    </div>
+</div>
+<div class="col-md-3 py-3 py-md-0">
+    <div class="card">
+        <img src="./images/shirt11.jpeg" alt="">
+        <div class="card-body">
+            <h3>Defender White Stain-Resistant Shirt</h3>
+            <p>Stain Resistant Shirt</p>
+            <div class="star">
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+                <i class="fas fa-star checked"></i>
+            </div>
+            <h5>$20.10 <strike>$30.20</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></h5>
+        </div>
+    </div>
+</div>
+</div>
+
+
+
+<!-- Cart View -->
+<div id="cart-view">
+    <h2>Shopping Cart</h2>
+    <ul id="cart-items">
+        <!-- Cart items will be dynamically added here -->
+    </ul>
+    <button onclick="hideCart()">Close Cart</button>
+</div>
+
+<!-- JavaScript -->
+<script>
+// Define an empty cart array to store added products
+let cart = [];
+
+// Function to add a product to the cart
+function addToCart(productName, price) {
+    cart.push({ name: productName, price: price });
+    updateCartCount();
+    updateCartView();
+}
+
+// Function to update the cart count displayed in the cart icon
+function updateCartCount() {
+    const cartCountElement = document.getElementById("cart-count");
+    cartCountElement.textContent = cart.length;
+}
+
+// Function to update the cart view with added items
+function updateCartView() {
+    const cartItemsElement = document.getElementById("cart-items");
+    cartItemsElement.innerHTML = '';
+
+    cart.forEach(item => {
+        const li = document.createElement("li");
+        li.textContent = `Product Name: ${item.name} - Price: $${item.price}`;
+        cartItemsElement.appendChild(li);
+    });
+}
+
+// Function to show the cart view
+function showCart() {
+    const cartView = document.getElementById("cart-view");
+    cartView.style.display = "block";
+}
+
+// Function to hide the cart view
+function hideCart() {
+    const cartView = document.getElementById("cart-view");
+    cartView.style.display = "none";
+}
+</script>
+  
+
+
+ <!-- footer -->
+ <footer id="footer" style="margin-top: 50px;">
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 footer-content">
+                    <h3>MERA JAAN</h3>
+                    <p>Men's Clothing World</p>
+                    <p>
+                        TPGIT <br>
+                        VELLORE <br>
+                        TAMILNADU <br>
+                    </p>
+                    <strong><i class="fas fa-phone"></i> Phone: <strong>+91 9345692031</strong></strong><br>
+                    <strong><i class="fa-solid fa-envelope"></i> Email: <strong>merajaan@gmail.com</strong></strong>
+                </div>
+                <div class="col-lg-3 col-md-6 footer-links">
+                    <h4>Usefull Links</h4>
+                    <ul>
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="about.html">About</a></li>
+                      <li><a href="contact.html">Contact</a></li>
+                      <li><a href="#">Services</a></li>
+                      <li><a href="#">Privacy policay</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 footer-links">
+                    <h4>Our Services</h4>
+                    <p>Elevate your lifestyle with our premium services. We keep you connected, stylish, and entertained with top-notch innovation.</p>
+                    <ul>
+                        <li><a href="#">Mobile phones</a></li>
+                        <li><a href="#">Smart watches</a></li>
+                        <li><a href="#">Earpods</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 footer-links">
+                    <h4>Our Social Network</h4>
+                    <p>Cultivating Lasting Social Ties</p>
+                    <div class="socail-links mt-3">
+                        <a href="#" class="twiiter"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="twiiter"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="twiiter"><i class="fa-brands fa-telegram"></i></a>
+                        <a href="#" class="twiiter"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container py-4">
+        <div class="copyright">
+            &copy; Copyright <strong>MERA JAAN</strong>.All Rights Reserved
+        </div>
+        <div class="credits">
+            Designed By <a href="#">MONIKA</a>
+        </div>
+    </div>
+    </footer>
+    <!-- footer -->
+        
+    <a href="#" class="arrow"><i><img src="./images/up-arrow.png" alt="" width="50px"></i></a>
+    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+    </body>
+    </html>

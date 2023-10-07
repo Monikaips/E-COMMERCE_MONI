@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Men's Clothing World</title>
+    <link rel="shortcut icon" type="image" href="./images/logo2.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
+    <!-- bootstrap links -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- bootstrap links -->
+    <!-- fonts links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+    <!-- fonts links -->
+</head>
+<body>
+
+    <!-- top navbar -->
+    <div class="top-navbar">
+        <div class="top-icons">
+
+            <a href="#" class="twiiter"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="twiiter"><i class="fa-brands fa-instagram"></i></a>
+            <a href="#" class="twiiter"><i class="fa-brands fa-telegram"></i></a>
+            <a href="https://chat.whatsapp.com/DgYJ4SQaophE3UAqvjlc7t" class="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+        <div class="other-links">
+            <button id="btn-login"><a href="login.html">Login</a></button>
+            <button id="btn-signup"><a href="signup.html">Sign up</a></button>
+
+            <i class="fa-solid fa-user"></i>
+            <i class="fa-solid fa-cart-shopping"></i>
+        </div>
+    </div>
+    <!-- top navbar -->
+
+    <div class="home-section">
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg" id="navbar">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#"><img src="./images/logo.png" alt="" width="180px"></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span><i class="fa-solid fa-bars" style="color: white;"></i></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                  <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="clothe.html">Clothings</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Category
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown" style="background-color: #1c1c50;">
+                      <li><a class="dropdown-item" href="tshirts.html">T-SHIRTS</a></li>
+                      <li><a class="dropdown-item" href="shirts.html">SHIRTS</a></li>
+                      <li><a class="dropdown-item" href="hoodies.html">Hoodies</a></li>                
+                    </ul>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">About Us</a>
+                  </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.html">Contact Us</a>
+                  </li>
+                </ul>
+               
+                <form class="d-flex">
+                  <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                  <button class="btn btn-outline-success" type="submit" id="search-btn">Search</button>
+                </form>
+              </div>
+            </div>
+          </nav>
+        <!-- navbar -->
+
+        <!-- home content -->
+        <section class="home">
+            <div class="content">
+                <h3>Elevate Your Wardrobe with</h3>
+                <h2>MERA JAAN</h2>           
+                <h3>Biggest Cloth Sale
+                    <br> <span>Up To 50% Off</span>
+                </h3>               
+                <button id="shopnow"><a href="clothe.html">Shop Now</a></button>
+            </div>
+            <div class="img">
+                <img src="./images/image.jfif" alt="">
+            </div>
+        </section>
+        <!-- home content -->
+    </div>
+
+    <!-- top cards -->
+    <div class="container" id="TOPCARD_CATEGORY">
+        <div class="row">
+            <div class="col-md-5 py-3 py-md-0">
+                <div class="card" style="background-color: #a9a9a926;">
+                    <img src="./images/topcard1.jpg" alt="">
+                    <div class="card-body">
+                        <h3>Men Hoodie</h3>
+                        <div class="star">
+                            <i class="fas fa-star checked"></i>
+                            <i class="fas fa-star checked"></i>
+                            <i class="fas fa-star checked"></i>
+                            <i class="fas fa-star checked"></i>
+                            <i class="fas fa-star checked"></i>
+                        </div>
+                        <h5>₹32.60 <strike>₹50</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 py-3 py-md-0">
+                <div class="card" style="background-color: #a9a9a926;">
+                    <img src="./images/topcard2.jpg" alt="">
+                    <div class="card-body">
+                        <h3>Men's Shirt</h3>
+                        <div class="star">
+                            <i class="fas fa-star checked"></i>
+                            <i class="fas fa-star checked"></i>
+                            <i class="fas fa-star checked"></i>
+                            <i class="fas fa-star checked"></i>
+                            <i class="fas fa-star checked"></i>
+                        </div>
+                        <h5>₹32.60 <strike>₹50</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card" style="background-color: #a9a9a926;">
+                    <img src="./images/topcard3.jpeg" alt="">
+                    <div class="card-body">
+                        <h3>Men T-Shirt</h3>
+                        <div class="star">
+                            <i class="fas fa-star checked"></i>
+                            <i class="fas fa-star checked"></i>
+                            <i class="fas fa-star checked"></i>
+                            <i class="fas fa-star checked"></i>
+                            <i class="fas fa-star checked"></i>
+                        </div>
+                        <h5>₹32.60 <strike>₹50</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- top cards -->
+    
+    <!-- banner -->
+    <div class="banner">
+        <div class="content">
+            <h1>Get Up To 50% Off</h1>
+            <p>Your Ticket to Half-Price Luxury!</p>
+            <div id="bannerbtn"><button>SHOP NOW</button></div>
+        </div>
+    </div>
+    <!-- banner -->
+
+    <!-- product cards -->
+    <div class="container" id="product-cards">
+        <h1 class="text-center">PRODUCT</h1>
+        <div class="row" style="margin-top: 30px;">
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <img src="./images/p13.png" alt="">
+                    <div class="card-body">
+                        <h3>Men T-Shirt</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <div class="star">
+                            <i class="fas fa-star checked"></i>
+                            <i class="fas fa-star checked"></i>
+                            <i class="fas fa-star checked"></i>
+                            <i class="fas fa-star checked"></i>
+                            <i class="fas fa-star checked"></i>
+                        </div>
+                        <h5>₹32.60 <strike>₹50</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <img src="./images/shirt4.jpg" alt="">
+                    <div class="card-body">
+                        <h3>Men Shirt</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <div class="star">
+                            <i class="fas fa-star checked"></i>
+                            <i class="fas fa-star checked"></i>
+                            <i class="fas fa-star checked"></i>
+                            <i class="fas fa-star checked"></i>
+                            <i class="fas fa-star checked"></i>
+                        </div>
+                        <h5>₹256.50 <strike>₹560</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <img src="./images/t9.jpg" alt="">
+                    <div class="card-body">
+                        <h3>Men T-Shirt</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <div class="star">
+                            <i class="fas fa-star checked"></i>
+                            <i class="fas fa-star checked"></i>
+                            <i class="fas fa-star checked"></i>
+                            <i class="fas fa-star checked"></i>
+                            <i class="fas fa-star checked"></i>
+                        </div>
+                        <h5>₹150.5 <strike>₹160.50</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <img src="./image/p16.png" alt="">
+                    <div class="card-body">
+                        <h3>Men Jacket</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <div class="star">
+                            <i class="fas fa-star checked"></i>
+                            <i class="fas fa-star checked"></i>
+                            <i class="fas fa-star checked"></i>
+                            <i class="fas fa-star checked"></i>
+                            <i class="fas fa-star checked"></i>
+                        </div>
+                        <h5>₹50.60 <strike>₹59.90</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row" style="margin-top: 30px;">
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <img src="./image/p17.png" alt="">
+                    <div class="card-body">
+                        <h3>Blue T-Shirt</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <div class="star">
+                            <i class="fas fa-star checked"></i>
+                            <i class="fas fa-star checked"></i>
+                            <i class="fas fa-star checked"></i>
+                            <i class="fas fa-star checked"></i>
+                            <i class="fas fa-star checked"></i>
+                        </div>
+                        <h5>$165.60 <strike>₹210.50</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <img src="./images/shirt7.jpg" alt="">
+                    <div class="card-body">
+                        <h3>Checked Shirt</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <div class="star">
+                            <i class="fas fa-star checked"></i>
+                            <i class="fas fa-star checked"></i>
+                            <i class="fas fa-star checked"></i>
+                            <i class="fas fa-star checked"></i>
+                            <i class="fas fa-star checked"></i>
+                        </div>
+                        <h5>₹182.30 <strike>₹345</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <img src="./image/p19.png" alt="">
+                    <div class="card-body">
+                        <h3>Men Jacket</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <div class="star">
+                            <i class="fas fa-star checked"></i>
+                            <i class="fas fa-star checked"></i>
+                            <i class="fas fa-star checked"></i>
+                            <i class="fas fa-star checked"></i>
+                            <i class="fas fa-star checked"></i>
+                        </div>
+                        <h5>₹333.2 <strike>₹455.60</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-3 py-3 py-md-0">
+                <div class="card">
+                    <img src="./image/p20.png" alt="">
+                    <div class="card-body">
+                        <h3>Men T-SHirt</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                        <div class="star">
+                            <i class="fas fa-star checked"></i>
+                            <i class="fas fa-star checked"></i>
+                            <i class="fas fa-star checked"></i>
+                            <i class="fas fa-star checked"></i>
+                            <i class="fas fa-star checked"></i>
+                        </div>
+                        <h5>₹190.50 <strike>₹215.60</strike> <span><i class="fa-solid fa-cart-shopping"></i></span></h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="clothe.html" id="viewmorebtn">View More</a>
+    </div>
+    <!-- product cards -->
+
+    <!-- product -->
+    <div class="container" style="margin-top: 100px;">
+        <hr>
+    </div>
+    <div class="container" id="product">
+        <h2 style="font-weight: bold;">PRODUCT.</h2>
+        <h5>Certainly, here's a product category description for your men's clothing e-commerce website "Mera Jaan," featuring t-shirts, shirts, and hoodies:</h5>
+        <h3>Trendsetting Men's Apparel - Explore Our Collection</h3>       
+            Welcome to Mera Jaan, your ultimate destination for men's fashion. Dive into a world of style, comfort, and confidence with our exclusive collection of t-shirts, shirts, and hoodies. We understand that fashion is not just about clothing; it's a reflection of your personality. That's why we've curated a selection that blends classic elegance with contemporary flair.
+         <h3>T-Shirts:</h3>   
+            Elevate your everyday look with our range of men's t-shirts. Whether you're seeking a casual vibe or a statement piece, we've got you covered. Discover a spectrum of colors, patterns, and designs that will make heads turn. From sleek and minimalistic to bold and expressive, our t-shirt collection suits every mood and occasion.
+         <h3>Shirts:</h3> 
+            Embrace sophistication and charm with our assortment of men's shirts. Crafted from premium fabrics, our shirts combine comfort and style effortlessly. Whether you're dressing for a formal event or a casual outing, you'll find the perfect fit. Explore a variety of fits, from slim to relaxed, and choose from a palette of colors and patterns that define your signature look.
+         <h3>Hoodies:</h3>    
+            Stay cozy and on-trend with our collection of men's hoodies. Perfect for those chilly evenings or a laid-back weekend, our hoodies are designed to keep you warm without compromising on style. With attention to detail and quality, our hoodies are more than just comfort wear; they're a fashion statement.    
+         <br><br>At Mera Jaan, we're committed to providing you with the latest fashion trends, exceptional quality, and unbeatable value. Our product range is not just clothing; it's an expression of your individuality. Our designs are versatile, suitable for a variety of occasions, and cater to the diverse tastes of modern men.      
+            Browse through our product categories, mix and match, and create your unique style. We believe that your wardrobe should be an extension of your personality. So, go ahead, explore, and find your fashion inspiration at Mera Jaan.
+            Join us on this fashion journey and make every outfit a statement. Shop with us today and experience the essence of style, quality, and affordability. Your fashion journey begins here, at Mera Jaan.</h5>
+        
+    </div>
+    <!-- product -->
+
+
+ <!-- offer -->
+    <div class="container" id="offer">
+        <div class="row">
+            <div class="col-md-4 py-3 py-md-0">
+                <i class="fa-solid fa-cart-shopping"></i>
+                <h5>Free Shipping</h5>
+                <p>On order over ₹499</p>
+            </div>
+            <div class="col-md-4 py-3 py-md-0">
+                <i class="fa-solid fa-truck"></i>
+                <h5>Fast Delivery</h5>
+                <p>World wide</p>
+            </div>
+            <div class="col-md-4 py-3 py-md-0">
+                <i class="fa-solid fa-thumbs-up"></i>
+                <h5>Big Choice</h5>
+                <p>Of products</p>
+            </div>
+        </div>
+    </div>
+ <!-- offer -->
+ <!-- footer -->
+ <footer id="footer" style="margin-top: 50px;">
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 footer-content">
+                    <h3>MERA JAAN</h3>
+                    <p>Men's Clothing World</p>
+                    <p>
+                        TPGIT <br>
+                        VELLORE <br>
+                        TAMILNADU <br>
+                    </p>
+                    <strong><i class="fas fa-phone"></i> Phone: <strong>+91 9345692031</strong></strong><br>
+                    <strong><i class="fa-solid fa-envelope"></i> Email: <strong>merajaan@gmail.com</strong></strong>
+                </div>
+                <div class="col-lg-3 col-md-6 footer-links">
+                    <h4>Usefull Links</h4>
+                    <ul>
+                      <li><a href="index.html">Home</a></li>
+                      <li><a href="about.html">About</a></li>
+                      <li><a href="contact.html">Contact</a></li>
+                      <li><a href="#">Services</a></li>
+                      <li><a href="#">Privacy policay</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 footer-links">
+                    <h4>Our Services</h4>
+                    <p>Elevate your lifestyle with our premium services. We keep you connected, stylish, and entertained with top-notch innovation.</p>
+                    <ul>
+                        <li><a href="#">Mobile phones</a></li>
+                        <li><a href="#">Smart watches</a></li>
+                        <li><a href="#">Earpods</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-md-6 footer-links">
+                    <h4>Our Social Network</h4>
+                    <p>Cultivating Lasting Social Ties</p>
+                    <div class="socail-links mt-3">
+                        <a href="#" class="twiiter"><i class="fa-brands fa-facebook-f"></i></a>
+                        <a href="#" class="twiiter"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#" class="twiiter"><i class="fa-brands fa-telegram"></i></a>
+                        <a href="https://chat.whatsapp.com/DgYJ4SQaophE3UAqvjlc7t" class="whatsapp"><i class="fa-brands fa-whatsapp"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr>
+    <div class="container py-4">
+        <div class="copyright">
+            &copy; Copyright <strong>MERA JAAN</strong>.All Rights Reserved
+        </div>
+        <div class="credits">
+            Designed By <a href="#">MONIKA</a>
+        </div>
+    </div>
+    </footer>
+    <!-- footer -->
+  
+    <a href="#" class="arrow"><i><img src="./images/up-arrow.png" alt="" width="50px"></i></a>
+    
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    
+        <form class="d-flex">
+            <input id="search-input" class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="button" id="search-btn">Search</button>
+        </form>
+    
+        <!-- Container to display search results -->
+        <div id="search-results"></div>
+    
+        <script>
+            document.addEventListener("DOMContentLoaded", function() {
+                // Reference to the search input and search results container
+                const searchInput = document.getElementById("search-input");
+                const searchResults = document.getElementById("search-results");
+        
+                // Event listener for the search button
+                document.getElementById("search-btn").addEventListener("click", function() {
+                    // Get the user's search query
+                    const searchTerm = searchInput.value.toLowerCase();
+        
+                    // Check if the search term is "shirts" and display a message
+                    if (searchTerm === "shirts") {
+                        searchResults.innerHTML = "<p>List of shirts:</p><ul><li>Shirt 1</li><li>Shirt 2</li><li>Shirt 3</li></ul>";
+                    } else {
+                        // Handle other search terms or show a message for no results
+                        searchResults.innerHTML = "<p>No results found for your search term.</p>";
+                    }
+                });
+            });
+        </script>
+    </body>
+    </html>
